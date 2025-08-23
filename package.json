@@ -1,9 +1,9 @@
 {
-  "name": "portfolio",
-  "homepage": "https://hamishw.com",
-  "description": "Portfolio site for Hamish Williams",
-  "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Hamish Williams",
+  "name": "nahom-portfolio",
+  "homepage": "coming soon",
+  "description": "Portfolio site for Nahom Haileselassie - Full Stack Developer & Graphic Designer",
+  "repository": "https://github.com/crXncm/portfolio.git",
+  "author": "Nahom Haileselassie",
   "sideEffects": false,
   "type": "module",
   "scripts": {
@@ -18,10 +18,12 @@
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.515.0",
+    "@jridgewell/sourcemap-codec": "^1.5.5",
     "@mdx-js/react": "^3.0.1",
     "@remix-run/cloudflare": "^2.7.1",
     "@remix-run/cloudflare-pages": "^2.7.1",
     "@remix-run/react": "^2.7.1",
+    "@rollup/plugin-inject": "^5.0.5",
     "framer-motion": "11.0.5",
     "isbot": "^4.1.0",
     "miniflare": "^3.20231030.4",

@@ -35,7 +35,7 @@ export const Uses = () => {
         />
         <ProjectHeader
           title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
+          description="A comprehensive list of tools, apps, hardware, and more that I use on a daily basis for full stack development, graphic design, and social media management."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
@@ -45,21 +45,20 @@ export const Uses = () => {
                 <List>
                   <ListItem>
                     <Link href="https://www.figma.com">Figma</Link> is my primary tool for
-                    UI design these days. Made the switch from Sketch in 2020 and haven’t
-                    looked back. I’ve also created{' '}
-                    <Link href="https://www.figma.com/@hamish">a few plugins</Link> that
-                    you can install.
+                    UI/UX design. I love how collaborative it is and how easy it makes
+                    prototyping and design systems. I also use{' '}
+                    <Link href="https://www.adobe.com/products/xd.html">Adobe XD</Link> for
+                    certain projects and client work.
                   </ListItem>
                   <ListItem>
-                    Any motion graphics I create are created in Adobe After Effects. So
-                    far I haven’t found a non-Adobe product that’s as good. If anyone has
-                    suggestions please <Link href="/contact">message me</Link>.
+                    For motion graphics and video editing, I primarily use Adobe After Effects
+                    for complex animations and <Link href="https://www.blackmagicdesign.com/products/davinciresolve">DaVinci Resolve</Link> for
+                    video editing and color grading. DaVinci's free version is incredibly powerful.
                   </ListItem>
                   <ListItem>
-                    For any 3D models and video editing I use{' '}
-                    <Link href="https://www.blender.org/">Blender</Link>. Since 2.8 it’s
-                    become way simpler to use and in a lot of ways better than expensive
-                    paid tools like 3DS Max or Maya.
+                    My focus is primarily on 2D design and web development, so I don't
+                    heavily use 3D modeling tools in my current workflow. I prefer to
+                    concentrate on creating impactful user interfaces and engaging social media content.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -73,41 +72,33 @@ export const Uses = () => {
               <ProjectSectionText as="div">
                 <List>
                   <ListItem>
-                    I use <Link href="https://vscodium.com/">VSCodium</Link> as my text
-                    editor, with the Tokyo Night theme and Operator Mono as my typeface of
-                    choice.
+                    I use <Link href="https://trae.so/">Trae</Link> as my primary code editor,
+                    along with <Link href="https://cursor.sh/">Cursor</Link> for AI-assisted development
+                    and <Link href="https://www.warp.dev/">Warp</Link> as my intelligent terminal.
                   </ListItem>
                   <ListItem>
-                    Firefox is my main browser for both development and general use.
+                    I primarily use Chrome for development and testing, with Firefox as my
+                    secondary browser for cross-browser compatibility testing.
                   </ListItem>
                   <ListItem>
-                    <Link href="https://reactjs.org/">React</Link> is my front end
-                    Javascript library of choice. The component-centric mental model is
-                    the first thing that truly made sense to me as a designer.
+                    <Link href="https://reactjs.org/">React</Link> is my frontend
+                    JavaScript library of choice. The component-based architecture aligns
+                    perfectly with my design thinking and makes building scalable UIs intuitive.
                   </ListItem>
                   <ListItem>
-                    For 3D effects and image shaders I use{' '}
-                    <Link href="https://threejs.org/">three.js</Link>. It has a bit of a
-                    learning curve but you can do some really powerful stuff with it.
+                    For styling, I love using <Link href="https://tailwindcss.com/">Tailwind CSS</Link> for
+                    utility-first development and <Link href="https://getbootstrap.com/">Bootstrap</Link> for
+                    rapid prototyping and client projects that need quick, reliable components.
                   </ListItem>
                   <ListItem>
-                    For CSS I’ve used a myriad pre-processors and css-in-js solutions like
-                    styled-components, but these days I’m using vanilla CSS with{' '}
-                    <Link href="https://postcss.org/">PostCSS</Link> to get upcoming CSS
-                    features today.
-                  </ListItem>
-                  <ListItem>
-                    For Javascript animations I use{' '}
-                    <Link href="https://www.framer.com/motion/">Framer Motion</Link>, it’s
-                    a great way to add spring animations to React and three.js.
+                    For animations, I use both <Link href="https://www.framer.com/motion/">Framer Motion</Link> for
+                    React animations and <Link href="https://greensock.com/gsap/">GSAP</Link> for
+                    more complex timeline-based animations and performance-critical scenarios.
                   </ListItem>
                   <ListItem>
                     For building and testing UI components in isolation I use{' '}
-                    <Link href="https://storybook.js.org/">Storybook</Link>. Check out the{' '}
-                    <Link href="https://storybook.hamishw.com">
-                      storybook for this website
-                    </Link>
-                    .
+                    <Link href="https://storybook.js.org/">Storybook</Link>. It's essential
+                    for maintaining design systems and ensuring component consistency.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -121,40 +112,20 @@ export const Uses = () => {
               <Table>
                 <TableBody>
                   <TableRow>
-                    <TableHeadCell>Desktop</TableHeadCell>
-                    <TableCell>Custom built</TableCell>
+                    <TableHeadCell>Laptop</TableHeadCell>
+                    <TableCell>Acer Predator</TableCell>
                   </TableRow>
                   <TableRow>
                     <TableHeadCell>Operating system</TableHeadCell>
-                    <TableCell>Arch Linux (by the way)</TableCell>
+                    <TableCell>Windows 11</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Browser</TableHeadCell>
-                    <TableCell>Zen Browser</TableCell>
+                    <TableHeadCell>Primary Browser</TableHeadCell>
+                    <TableCell>Chrome</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Monitor</TableHeadCell>
-                    <TableCell>1440p IPS 144hz LG 27GL850</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Keyboard</TableHeadCell>
-                    <TableCell>Tofu65</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Mouse</TableHeadCell>
-                    <TableCell>Logitech G403</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Laptop</TableHeadCell>
-                    <TableCell>Macbook Pro 14″</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Headphones</TableHeadCell>
-                    <TableCell>Audio Technica ATH-M50x/Apple Airpods</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Microphone</TableHeadCell>
-                    <TableCell>Blue Yeti</TableCell>
+                    <TableHeadCell>Secondary Browser</TableHeadCell>
+                    <TableCell>Firefox</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

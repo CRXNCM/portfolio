@@ -4,12 +4,11 @@ import { Heading } from '~/components/heading';
 import { Section } from '~/components/section';
 import { Text } from '~/components/text';
 import { Transition } from '~/components/transition';
-import { useState } from 'react';
 import styles from './project-summary.module.css';
 
-export function ProjectSummary({
+export function ProjectSummarySimple({
   id,
-  visible: sectionVisible,
+  visible,
   sectionRef,
   index,
   title,
@@ -17,9 +16,7 @@ export function ProjectSummary({
   buttonText,
   buttonLink,
   alternate,
-  ...rest
 }) {
-  const [focused, setFocused] = useState(false);
   const titleId = `${id}-title`;
   const indexText = index < 10 ? `0${index}` : index;
 
@@ -28,38 +25,44 @@ export function ProjectSummary({
       className={styles.summary}
       data-alternate={alternate}
       data-first={index === 1}
-      onFocus={() => setFocused(true)}
-      onBlur={() => setFocused(false)}
       as="section"
       aria-labelledby={titleId}
       ref={sectionRef}
       id={id}
       tabIndex={-1}
-      {...rest}
     >
       <div className={styles.content}>
-        <Transition in={sectionVisible || focused}>
-          {({ visible }) => (
+        <Transition in={visible}>
+          {({ visible: transitionVisible }) => (
             <div className={styles.details}>
               <div aria-hidden className={styles.index}>
-                <Divider notchWidth="64px" notchHeight="8px" collapsed={!visible} collapseDelay={1000} />
-                <span className={styles.indexNumber} data-visible={visible}>
+                <Divider
+                  notchWidth="64px"
+                  notchHeight="8px"
+                  collapsed={!transitionVisible}
+                  collapseDelay={1000}
+                />
+                <span className={styles.indexNumber} data-visible={transitionVisible}>
                   {indexText}
                 </span>
               </div>
-              <Heading level={3} as="h2" className={styles.title} data-visible={visible} id={titleId}>
+              <Heading
+                level={3}
+                as="h2"
+                className={styles.title}
+                data-visible={transitionVisible}
+                id={titleId}
+              >
                 {title}
               </Heading>
-              <Text className={styles.description} data-visible={visible} as="p">
+              <Text className={styles.description} data-visible={transitionVisible} as="p">
                 {description}
               </Text>
-              {buttonLink && (
-                <div className={styles.button} data-visible={visible}>
-                  <Button iconHoverShift href={buttonLink} iconEnd="arrow-right">
-                    {buttonText || 'View on GitHub'}
-                  </Button>
-                </div>
-              )}
+              <div className={styles.button} data-visible={transitionVisible}>
+                <Button iconHoverShift href={buttonLink} iconEnd="arrow-right">
+                  {buttonText}
+                </Button>
+              </div>
             </div>
           )}
         </Transition>
@@ -67,3 +70,4 @@ export function ProjectSummary({
     </Section>
   );
 }
+

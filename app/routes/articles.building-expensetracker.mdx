@@ -1,0 +1,92 @@
+---
+title: 'Building ExpenseTracker: from idea to full-stack app'
+abstract: I set out to build a personal finance tool that fits my day-to-day needs, then grew it into a full-stack app with authentication, role-based admin features, expense/income tracking, meal planning, notes, and a clean React UI.
+date: '2025-08-22'
+banner: /static/expense-tracker-banner.png
+---
+
+## Why I built it
+
+I wanted a single place to track expenses, incomes, recurring bills, quick daily logs, and even weekly meal planning—all behind authentication and accessible across devices. Spreadsheets got unwieldy, so I built a proper web app.
+
+![A dashboard mock showing expenses, income, and meal plan cards](/static/expense-tracker-dashboard.png)
+
+## The first iteration
+
+I started small:
+- A basic Express server and a few REST endpoints
+- A simple React UI with Vite for fast dev
+- MongoDB models for expenses and incomes
+
+Once I had create/read/update/delete working end-to-end, I layered on auth, summaries, and admin features.
+
+## Tech choices
+
+- Backend: Node.js + Express, JWT auth, Multer for uploads, Mongoose + MongoDB
+- Frontend: React + Vite, Context for user/theme, custom hooks and UI components
+- Styling/UX: lightweight CSS with reusable cards, modals, and tables
+- Build/dev: Vite for speed, modular “service” layer for API calls
+
+## Backend architecture
+
+- Routes live under `backend/routes` and map to controllers in `backend/controllers`
+- Data models in `backend/models` (e.g., `Expense`, `Income`, `FixedExpense`, `DailyLog`, `MealPlan`, `Note`, `User`)
+- Auth pipeline:
+  - `authMiddleware` validates JWTs
+  - `roleMiddleware` gates admin-only routes
+  - `uploadMiddleware` handles avatar/logo uploads to `backend/uploads`
+- Highlights:
+  - Dashboard endpoints aggregate totals by category and time period
+  - Fixed expenses act as scheduled/recurring costs
+  - A seeding script creates a Super Admin for first-time setup
+
+## Frontend structure
+
+- Pages in `frontend/expense-tracker/src/pages/Dashboard` for Expenses, Income, Meal Plans, Notes, Settings, and Admin
+- Components compose the UI (cards, modals, summaries) with a shared `DashboardLayout`
+- `UserContext` holds auth/session; `ThemeContext` supports dark mode
+- API calls are centralized in `services` (e.g., `dashboardService`, `adminService`)
+- Reusable UI patterns:
+  - Add/edit modals wired to form inputs
+  - Details modals for read-only inspection
+  - Alert system for confirmation and feedback
+
+## Authentication and roles
+
+- Login/Signup pages exchange credentials for a JWT
+- Token is stored client-side and attached via Axios instance
+- Role-aware UI: Admin sees management screens; regular users see personal views
+- Backend enforces roles at the route level
+
+## Files and images
+
+- Profile photos and logos upload with Multer to `backend/uploads`
+- Filenames are timestamped to avoid collisions
+- The client shows previews and validates file types
+
+## Not all smooth sailing
+
+1. Data modeling
+   - Balancing normalized vs. pragmatic schemas for speed of iteration
+   - Aggregation for summaries without over-optimizing prematurely
+
+2. Auth edge cases
+   - Token expiration and refresh UX
+   - Ensuring admin-only routes are both hidden in the UI and protected in the API
+
+3. Upload reliability
+   - Handling large images, type checks, and clean error messages to users
+
+## Looking back, and forward
+
+This started as a personal tool and became a robust full-stack app. Next up:
+- Budget goals and alerts when limits are reached
+- Receipt OCR for quick expense entry
+- PWA features for offline logging
+- More charts and insights in the dashboard
+
+## Update: Aug 2025
+
+The dashboard now summarizes weekly progress and fixed expenses more cleanly. I also refined the theme system and added better admin tools for user management.
+
+
