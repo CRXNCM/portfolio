@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Personal portfolio</h1>
 
-[![Site preview](/public/site-preview.png)](https://your-portfolio-url.com)
+[![Site preview](/public/site-preview.png)](https://crxncm.github.io/portfolio)
 
 Nahom Haileselassie's design portfolio to showcase projects in full stack development, graphic design, and social media management. Built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). Portfolio site built with modern web technologies.
 
