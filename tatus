@@ -1,0 +1,5 @@
+[33m5aa86fb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Add GitHub Pages deployment workflow
+[33m508f7fe[m Update README to change site preview image path from 'site-preview.png' to 'Screenshot.png'
+[33m5a9ac12[m Update README to reflect the correct GitHub link for site preview
+[33m25dbaa1[m Add image support for portfolio projects, including new routes and updated project data
+[33me55f507[m Update README with live portfolio link and add setup guide for deployment and local development
