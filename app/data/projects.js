@@ -8,7 +8,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/PulseDownloader",
     category: "Python",
     featured: true,
-    imageUrl:  null// Placeholder for screenshot
+    imageUrl: "/static/pulse-downloader-banner.png"
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/InstaPro",
     category: "JavaScript",
     featured: true,
-    imageUrl: null
+    imageUrl: "/static/instapro-banner.png"
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/Basic_OCR_App",
     category: "Python",
     featured: true,
-    imageUrl: null
+    imageUrl: "/static/ocr-app-banner.png"
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/face_detection",
     category: "AI/ML",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/face-detection-banner.png"
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/RUH-V1.0",
     category: "Game Development",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/ruh-game-banner.png"
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/preprocess_ocr",
     category: "Python",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/preprocess-ocr-banner.png"
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/VLC-Clone",
     category: "Python",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/vlc-clone-banner.png"
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/BgRemover",
     category: "AI/ML",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/bg-remover-banner.png"
   },
   {
     id: 9,
@@ -96,7 +96,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/Expense-Tracker",
     category: "JavaScript",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/expense-tracker-banner.png"
   },
   {
     id: 10,
@@ -129,7 +129,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/Streamlit-Movie-Explorer",
     category: "Data Science",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/Streamlit-Movie-Explorer-banner.png"
   },
   {
     id: 13,
@@ -151,7 +151,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/AutoCertify",
     category: "Automation",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/AutoCertify-banner.png"
   },
   {
     id: 15,
@@ -173,7 +173,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/color-palette-generator",
     category: "Design Tools",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/color-palette-generator-banner.png"
   },
   {
     id: 17,
@@ -195,7 +195,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/quote-vibes",
     category: "JavaScript",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/quote-vibes-banner.png"
   },
   {
     id: 19,
@@ -217,7 +217,7 @@ export const projects = [
     githubUrl: "https://github.com/CRXNCM/Custom-Memory--CMM-",
     category: "System Programming",
     featured: false,
-    imageUrl: null
+    imageUrl: "/static/Custom-Memory-banner.png"
   },
   {
     id: 21,

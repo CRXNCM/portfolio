@@ -1,0 +1,73 @@
+.expenseTracker {
+  --project-color: oklch(52.25% 0.121 81.53);
+}
+
+.columns {
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.imagesText {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.interfaceImages {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.interfaceImage {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.gridImage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.gridBackground {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gridForeground {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 696px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .interfaceImages {
+    gap: 16px;
+  }
+
+  .gridImage {
+    gap: 16px;
+  }
+}
